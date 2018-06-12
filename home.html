@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<title>Colab</title>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="favicon.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="#home">
+                <img src="Colab.png" class="w3-bar-item w3-button w3-wide" alt="colab" height="58">
+            </a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="#sobre" class="w3-bar-item w3-button">SOBRE</a>
+                <a href="#time" class="w3-bar-item w3-button">
+                    <i class="fa fa-user"></i> TIME</a>
+                <a href="#galeria" class="w3-bar-item w3-button">
+                    <i class="fa fa-th"></i> GALERIA</a>
+                <a href="#contato" class="w3-bar-item w3-button">
+                    <i class="fa fa-envelope"></i> CONTATO</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">fechar ×</a>
+        <a href="#home" onclick()="w3_close()" class="w3-bar-item w3-button">HOME</a>
+        <a href="#sobre" onclick="w3_close()" class="w3-bar-item w3-button">SOBRE</a>
+        <a href="#time" onclick="w3_close()" class="w3-bar-item w3-button">TIME</a>
+        <a href="#galeria" onclick="w3_close()" class="w3-bar-item w3-button">GALERIA</a>
+        <a href="#contato" onclick="w3_close()" class="w3-bar-item w3-button">CONTATO</a>
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-left w3-text-white" style="padding:48px">
+            <span class="w3-jumbo w3-hide-small">Colab - Colaboratório de Tecnologia Social</span>
+            <br>
+            <span class="w3-xxlarge w3-hide-large w3-hide-medium">Colab</span>
+            <br>
+            <span class="w3-large">Cocriando soluções de tecnologia social em escolas públicas</span>
+            <p>
+                <a href="#sobre" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-hover-opacity-off">Quem Somos</a>
+            </p>
+        </div>
+        <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+            <a class="fa fa-facebook-official w3-hover-opacity" href="https://fb.com/programanetes" title="facebook" target="_blank"></a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-container" style="padding:128px 16px" id="sobre">
+
+        <div class="w3-row-padding">
+            <div class="w3-col m6" style="text-align: center; vertical-align: center">
+                <img class="w3-image w3-round-large" src="./imagens/Colab - Copia.png" alt="Colab logo" width="400" style="padding-right: 0px">
+            </div>
+            <div class="w3-col m6" style="padding-top: 30px; padding-right: 0px">
+                <h3 class="w3-center">SOBRE</h3>
+                <p class="w3-center w3-large">O Colaboratório é um espaço físico destinado à interação entre alunos e professores de escolas públicas e
+                    universidades, por meio da cocriação e desenvolvimento de produtos inovadores e tecnologias de baixo
+                    custo, alta eficiência e fácil replicabilidade, capazes de gerar benefícios para a comunidade e que sejam
+                    qualificadas como recursos para as áreas de saúde, energia, educação, manejo de culturas agrícolas e
+                    gerenciamento de resíduos.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Objetivos-->
+    <div class="w3-container colab-green" style="padding:128px 16px" id="objetivos">
+        <h3 class="w3-center" style="padding:20px">OBJETIVOS</h3>
+        <div class="w3-center">
+            <div class="w3-quarter" style="padding:20px">
+                <i class="fa fa-slideshare w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Co-Criação de Soluções</p>
+                <p>Aliança entre os saberes populares e científicos, produzindo soluções sob os preceitos de Tecnologia Social
+                    e Economia Solidária, capazes de atender as demandas das partes envolvidas.
+                </p>
+            </div>
+            <div class="w3-quarter" style="padding:20px">
+                <i class="fa fa-flask w3-margin-bottom w3-jumbo w3-center"></i>
+                <p class="w3-large">Interesse pela ciência</p>
+                <p>Incentivo ao interesse de crianças da rede pública pela ciência, através da aplicação de conceitos teóricos
+                    no desenvolvimento de soluções práticas e úteis na rotina das comunidades.
+
+                </p>
+            </div>
+            <div class="w3-quarter" style="padding:20px">
+                <i class="fa fa-clipboard w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Geração de Protocolo</p>
+                <p>Produção de uma metodologia reaplicável para diversas universidades e escolas públicas brasileiras, respeitando
+                    as singularidades de cada contexto socioeconômico.
+                </p>
+            </div>
+            <div class="w3-quarter" style="padding:20px">
+                <i class="fa fa-graduation-cap w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Reaproveitamento de horas</p>
+                <p>Certificação de créditos de extensão acadêmica aos universitários atuantes, fortalecendo a prática extensionista,
+                    com aplicação direta na educação básica.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Time Section -->
+    <div class="w3-container" style="padding:128px 16px" id="time">
+        <h3 class="w3-center">TIME</h3>
+        <div class="w3-row-padding center" style="margin-top:64px">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card box">
+                    <img src="imagens/time/luciana.jpg" alt="Luciana Ferreira" class="perfil">
+                    <div class="w3-container">
+                        <h3>Luciana Ferreira da Silva</h3>
+                        <p class="w3-opacity">Professora Orientadora</p>
+                        <p>Professora, Doutora e pesquisadora em Ciências Sociais na Universidade Federal de São Paulo
+                            <i>campus</i> São José dos Campos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card box">
+                    <img src="imagens/time/marina.jpg" alt="Marina Dias" class="perfil">
+                    <div class="w3-container">
+                        <h3>Marina Dias</h3>
+                        <p class="w3-opacity">Professora Orientadora</p>
+                        <p>Professora, Doutora e pesquisadora em Engenharia de Materiais na Universidade Federal de São Paulo
+                            <i>campus</i> São José dos Campos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card box">
+                    <img src="imagens/time/tiago.jpg" alt="Tiago Oliveira" class="perfil">
+                    <div class="w3-container">
+                        <h3>Tiago Oliveira</h3>
+                        <p class="w3-opacity">Professor Orientador</p>
+                        <p>Professor, Doutor e pesquisador em Engenharia de Computação na Universidade Federal de São Paulo
+                            <i>campus</i> São José dos Campos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row-padding center" style="margin-top:64px">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card box">
+                    <img src="imagens/time/camila.jpg" alt="Camila Oliveira" class="perfil">
+                    <div class="w3-container">
+                        <h3>Camila Cristina de Oliveira Silva</h3>
+                        <p class="w3-opacity">Coodenadora</p>
+                        <p>Cientista, graduanda em Biotecnogia e Mestranda pela Unifesp. Responsável pela elaboração, execução
+                            e monitoramento das atividades desenvolvidas no Colaboratório.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card box">
+                    <img src="imagens/time/ana.jpg" alt="Ana Cecilia" class="perfil">
+                    <div class="w3-container">
+                        <h3>Ana Cecilia Nogueira de Castro</h3>
+                        <p class="w3-opacity">Colaboradora</p>
+                        <p>Graduanda em Ciência e Tecnologia pela Unifesp. Auxilia o desenvolvimento e organização das atividades.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card box">
+                    <img src="imagens/time/barbara.jpg" alt="Barbara Machado" class="perfil">
+                    <div class="w3-container">
+                        <h3>Barbara Maria Machado</h3>
+                        <p class="w3-opacity">Colaboradora</p>
+                        <p>Graduanda em Ciência e Tecnologia pela Unifesp. Auxilia o desenvolvimento e organização das atividades.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Section -->
+    <div class="w3-container colab-green" style="padding:128px 16px" id="galeria">
+        <h3 class="w3-center">Galeria de Fotos</h3>
+        <p class="w3-center w3-large">Algumas de nossa ações</p>
+
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-col l3 m6">
+                <img src="imagens/galeria/galeria (1).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dinâmica de introdução a tecnologia social">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="imagens/galeria/galeria (2).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Idenficação de tecnologias sociais">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="imagens/galeria/galeria (3).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Idenficação de tecnologias sociais 2">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="imagens/galeria/galeria (4).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Explicação de saneamento sustentável">
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-section">
+            <div class="w3-col l3 m6">
+                <img src="imagens/galeria/galeria (5).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Confecção de prima para projeção 3D">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="imagens/galeria/galeria (6).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Confecção de prima para projeção 3D 1">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="imagens/galeria/galeria (7).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Confecção de prima para projeção 3D 2">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="imagens/galeria/galeria (8).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Confecção de prima para projeção 3D 3">
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-section">
+            <div class="w3-col l3 m6">
+                <img src="imagens/galeria/galeria (9).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="O que Você criaria para mudar o mundo?">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="imagens/galeria/galeria (10).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Identificação de problemas da escola">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="imagens/galeria/galeria (11).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Visita ao ICT-Unifesp">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="imagens/galeria/galeria (12).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Visita ao Museu da Ciência no ICT-Unifesp">
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-section">
+            <div class="w3-col l3 m6">
+                <img src="imagens/galeria/galeria (13).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Conversa em roda: Apresentação do Colaboratório">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="imagens/galeria/galeria (14).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Pesquisa de interesse">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="imagens/galeria/galeria (15).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Fabricação de Sal de Frutas: Conveitos de Acidos e Bases">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="imagens/galeria/galeria (16).jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Reação Quimica para a criação do Sal de Frutas">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+    <div class="w3-container" style="padding:128px 16px" id="time">
+        <h3 class="w3-center">PARCEIROS</h3>
+        <div class="center">
+            <div class="w3-col l3 m6">
+                <a href="https://www.unifesp.br/campus/sjc/" target="_blank">
+                    <img src="imagens/parceiros/unifesp.png" style="width:70%;padding: 20px" class="w3-hover-opacity" alt="unifesp">
+                </a>
+            </div>
+            <div class="w3-col l3 m6">
+                <a href="http://programanetes.com/" target="_blank">
+                    <img src="imagens/parceiros/netes.png" style="width:70%;padding: 20px" class="w3-hover-opacity" alt="netes">
+                </a>
+            </div>
+            <div class="w3-col l3 m6">
+                <a href="https://www.facebook.com/profile.php?id=100017041386130" target="_blank">
+                    <img src="imagens/parceiros/escola.jpg" style="width:70%;padding: 20px" class="w3-hover-opacity" alt="emef emmanuel antonio dos santos">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contato">
+        <h3 class="w3-center">CONTATO</h3>
+        <p class="w3-center w3-large">Interessado(a) em participar? Entre em contato:</p>
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-half">
+                <p>
+                    <b>Endereço:</b>
+                    <p>Av. Cesare Monsueto Giulio Lattes, 1211 - Jardim Santa Ines I, São José dos Campos - SP</p>
+                </p>
+                <p>
+                    <b>E-mail:</b>
+                    <a href="mailto:colabtecsol@gmail.com">colabtecsol@gmail.com</a>
+                </p>
+                <br>
+                <form action="/action_page.php" method="POST" target="_blank">
+                    <p>
+                        <input class="w3-input w3-border" type="text" placeholder="Nome" required name="Nome">
+                    </p>
+                    <p>
+                        <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                    </p>
+                    <p>
+                        <input class="w3-input w3-border" type="text" placeholder="Assunto" required name="Assunto">
+                    </p>
+                    <p>
+                        <textarea class="w3-input w3-border" type="text" placeholder="Mensagem" required="" name="Mensagem" rows="5" style="max-width:100%;min-height:150px;line-height: auto;"></textarea>
+                    </p>
+                    <p style="text-align: right">
+                        <button class="w3-button w3-black" type="submit">
+                            <i class="fa fa-paper-plane"></i> ENVIAR
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="w3-half">
+                <!-- Add Google Maps -->
+                <div id="googleMap" style="width:100%;height:510px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <a href="#home" class="w3-button w3-light-grey">
+            <i class="fa fa-arrow-up w3-margin-right"></i>PARA O TOPO</a>
+        <div class="w3-xlarge w3-section">
+            <a class="fa fa-facebook-official w3-hover-opacity" href="https://fb.com/programanetes" title="facebook" target="_blank"></a>
+    </footer>
+
+    <!-- Add Google Maps -->
+    <script>
+        function myMap() {
+            myCenter = new google.maps.LatLng(-23.1634294,-45.7945018);
+            var mapOptions = {
+                center: myCenter,
+                zoom: 17, scrollwheel: true, draggable: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+
+            var marker = new google.maps.Marker({
+                position: myCenter,
+            });
+            marker.setMap(map);
+        }
+
+        function onContactClick(element) {
+
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD84VaTkBAFYxtQdlktIyFUznsPRn1z0Mc&callback=myMap"></script>
+
+</body>
+
+</html>
